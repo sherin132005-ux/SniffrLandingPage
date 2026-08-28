@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/web", "destination": "https://sniffr-web-subpath.vercel.app/web" },
+    { "source": "/web/:path*", "destination": "https://sniffr-web-subpath.vercel.app/web/:path*" }
+  ]
+}
