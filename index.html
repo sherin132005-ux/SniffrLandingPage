@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sniffr — Find Your Pet's Perfect Playmate</title>
+<meta name="description" content="Sniffr is a pet-profile-first social network — feed, playdate matching, rankings, chat & calls, and communities, all built around your pet." />
+<meta name="theme-color" content="#F4A7B9" />
+<link rel="icon" type="image/png" href="assets/brand/logo-circle.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/main.css" />
+<style>.material-symbols-outlined{font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24;}</style>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <a href="#top" class="brand-mark">
+      <img src="assets/brand/logo.png" alt="Sniffr" />
+      <span>Sniffr</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#benefits">Benefits</a>
+      <a href="#testimonials">Community</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-ctas">
+      <a href="https://sniffrweb.com" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Sniffr Web</a>
+      <a href="#download" class="btn btn-dark btn-sm">Get the App</a>
+    </div>
+
+    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="#benefits">Benefits</a>
+    <a href="#testimonials">Community</a>
+    <a href="#contact">Contact</a>
+    <a href="https://sniffrweb.com" target="_blank" rel="noopener">Open Sniffr Web</a>
+    <a href="#download">Get the App</a>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-blob hero-blob--1"></div>
+    <div class="hero-blob hero-blob--2"></div>
+
+    <div class="hero-content hero-sequence">
+      <p class="eyebrow seq-item"><span class="dot"></span> A social network built for pets</p>
+      <h1 class="hero-title">
+        <span class="title-line seq-item">Find your</span>
+        <span class="title-line seq-item"><em>pack</em>.</span>
+      </h1>
+      <p class="hero-sub seq-item">A social world built around your pet, with their own profile, friendships, and a circle that truly gets them.</p>
+
+      <div class="hero-ctas seq-item">
+        <a href="https://sniffrweb.com" target="_blank" rel="noopener" class="btn btn-primary">🌐 Use Sniffr Web</a>
+        <a href="#download" class="btn btn-ghost">📱 Get it on Android</a>
+      </div>
+
+      <p class="hero-microcopy seq-item">Because pets deserve their own world❤︎</p>
+    </div>
+
+    <div class="hero-visual reveal">
+      <button class="simba-card" id="simbaCard" aria-label="View Simba's photo, full size" aria-haspopup="dialog">
+        <img src="assets/photos/simba.jpg" alt="Simba, the dog behind Sniffr, sitting in a car" loading="lazy" />
+        <div class="simba-card-info">
+          <p class="simba-heading">The Heart Behind Sniffr</p>
+          <p class="simba-name">Meet Simba❤️‍🔥</p>
+          <p class="simba-caption">licked by 14.3k paws🐾</p>
+        </div>
+      </button>
+      <img class="decor decor-sparkle-1" src="assets/decor/paw-sparkle-1.png" alt="" />
+      <img class="decor decor-sparkle-2" src="assets/decor/paw-sparkle-3.png" alt="" />
+      <img class="decor decor-dot-1" src="assets/decor/paw-dot-2.png" alt="" />
+    </div>
+  </section>
+
+  <!-- Lightbox for Simba's photo -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Simba's photo">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <img src="assets/photos/simba-lg.jpg" alt="Simba, the dog behind Sniffr, sitting in a car" />
+  </div>
+
+  <!-- ============ BENEFITS ============ -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span> Why Sniffr</p>
+        <h2 class="section-title">Everything your pet's social life needs</h2>
+        <p class="section-sub tagline-words">
+          <em style="color:#F0A0BC">Meet.</em>
+          <em style="color:#7FBFE0">Play.</em>
+          <em style="color:#4FB88F">Explore.</em>
+          <em style="color:#D69A3A">Connect.</em>
+        </p>
+      </div>
+
+      <div class="benefit-grid reveal-stagger">
+        <div class="benefit-card" tabindex="0">
+          <div class="benefit-icon pink"><span class="material-symbols-outlined">explore</span></div>
+          <p class="benefit-num">01 · Find Your Pack</p>
+          <h3>Discover pets and people around you</h3>
+          <p>A swipe-first way to discover your pet's next best friend. Find nearby pets, meet their humans, and make every pet's world a little bigger.</p>
+        </div>
+        <div class="benefit-card" tabindex="0">
+          <div class="benefit-icon blue"><span class="material-symbols-outlined">photo_camera</span></div>
+          <p class="benefit-num">02 · Pet Social</p>
+          <h3>Give your pet the spotlight</h3>
+          <p>Share photos, moments, and stories from their world. With reactions made for wagging tails and a feed where your pet is always the main character.</p>
+        </div>
+        <div class="benefit-card" tabindex="0">
+          <div class="benefit-icon mint"><span class="material-symbols-outlined">chat_bubble</span></div>
+          <p class="benefit-num">03 · Chat &amp; Calls</p>
+          <h3>Turn new connections into real ones</h3>
+          <p>Message pet parents, plan playdates, and jump into calls without leaving Sniffr. Because some friendships deserve more than a follow.</p>
+        </div>
+        <div class="benefit-card" tabindex="0">
+          <div class="benefit-icon blue"><span class="material-symbols-outlined">groups</span></div>
+          <p class="benefit-num">04 · PawCircles</p>
+          <h3>Find your pet people</h3>
+          <p>Join local communities built around the places and passions you share. From dog-park regulars to rescue heroes and cat people who just get it.</p>
+        </div>
+        <div class="benefit-card" tabindex="0">
+          <div class="benefit-icon pink"><span class="material-symbols-outlined">military_tech</span></div>
+          <p class="benefit-num">05 · Pet Rankings</p>
+          <h3>See who's making waves around you</h3>
+          <p>Discover the pets everyone's talking about. Climb the local leaderboard, collect reactions, and let your pet take their rightful place in the spotlight. 🐾</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS (preserved marquee UI, reskinned) ============ -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-head reveal">
+      <p class="eyebrow"><span class="dot"></span> Community</p>
+      <h2 class="section-title">Already out there, wagging</h2>
+    </div>
+
+    <div class="marquee-track">
+        <div class="marquee-row" id="marqueeA">
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-simba.jpg" alt="Simba from Coimbatore on Sniffr" /><div><p class="who">Simba</p><p class="where">Coimbatore</p></div></div><p class="m-card-body">Ready for the evening walk at Race Course 🐾</p><p class="m-card-foot">142 licks</p></div>
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-kitty.jpg" alt="Kitty from Kochi on Sniffr" /><div><p class="who">Kitty</p><p class="where">Kochi</p></div></div><p class="m-card-body">Made a new friend at Marine Drive today!</p><p class="m-card-foot">89 licks</p></div>
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-bruno.jpg" alt="Bruno from Chennai on Sniffr" /><div><p class="who">Bruno</p><p class="where">Chennai</p></div></div><p class="m-card-body">Rising star of the week 🏆</p><p class="m-card-foot">312 licks</p></div>
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-laddu.jpg" alt="Laddu from Madurai on Sniffr" /><div><p class="who">Laddu</p><p class="where">Madurai</p></div></div><p class="m-card-body">Joined the Marina Dog Walkers circle</p><p class="m-card-foot">56 licks</p></div>
+          <!-- duplicate for seamless loop -->
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-simba.jpg" alt="Simba from Coimbatore on Sniffr" /><div><p class="who">Simba</p><p class="where">Coimbatore</p></div></div><p class="m-card-body">Ready for the evening walk at Race Course 🐾</p><p class="m-card-foot">142 licks</p></div>
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-kitty.jpg" alt="Kitty from Kochi on Sniffr" /><div><p class="who">Kitty</p><p class="where">Kochi</p></div></div><p class="m-card-body">Made a new friend at Marine Drive today!</p><p class="m-card-foot">89 licks</p></div>
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-bruno.jpg" alt="Bruno from Chennai on Sniffr" /><div><p class="who">Bruno</p><p class="where">Chennai</p></div></div><p class="m-card-body">Rising star of the week 🏆</p><p class="m-card-foot">312 licks</p></div>
+        <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-laddu.jpg" alt="Laddu from Madurai on Sniffr" /><div><p class="who">Laddu</p><p class="where">Madurai</p></div></div><p class="m-card-body">Joined the Marina Dog Walkers circle</p><p class="m-card-foot">56 licks</p></div>
+      </div>
+    </div>
+
+    <div class="marquee-track">
+      <div class="marquee-row reverse" id="marqueeB">
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-meera.jpg" alt="Meera from Bengaluru on Sniffr" /><div><p class="who">Meera</p><p class="where">Bengaluru</p></div></div><p class="m-card-body">Hit #5 on the Indiranagar leaderboard!</p><p class="m-card-foot">201 licks</p></div>
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-tuffy.jpg" alt="Tuffy from Trivandrum on Sniffr" /><div><p class="who">Tuffy</p><p class="where">Trivandrum</p></div></div><p class="m-card-body">Video call with my best friend Rocky 📞</p><p class="m-card-foot">74 licks</p></div>
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-mia.jpg" alt="Mia from Mysuru on Sniffr" /><div><p class="who">Mia</p><p class="where">Mysuru</p></div></div><p class="m-card-body">New raincoat, monsoon ready! 🧶</p><p class="m-card-foot">118 licks</p></div>
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-rocky.jpg" alt="Rocky from Hyderabad on Sniffr" /><div><p class="who">Rocky</p><p class="where">Hyderabad</p></div></div><p class="m-card-body">Found my favorite ball after 3 days!</p><p class="m-card-foot">63 licks</p></div>
+          <!-- duplicate -->
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-meera.jpg" alt="Meera from Bengaluru on Sniffr" /><div><p class="who">Meera</p><p class="where">Bengaluru</p></div></div><p class="m-card-body">Hit #5 on the Indiranagar leaderboard!</p><p class="m-card-foot">201 licks</p></div>
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-tuffy.jpg" alt="Tuffy from Trivandrum on Sniffr" /><div><p class="who">Tuffy</p><p class="where">Trivandrum</p></div></div><p class="m-card-body">Video call with my best friend Rocky 📞</p><p class="m-card-foot">74 licks</p></div>
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-mia.jpg" alt="Mia from Mysuru on Sniffr" /><div><p class="who">Mia</p><p class="where">Mysuru</p></div></div><p class="m-card-body">New raincoat, monsoon ready! 🧶</p><p class="m-card-foot">118 licks</p></div>
+          <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-rocky.jpg" alt="Rocky from Hyderabad on Sniffr" /><div><p class="who">Rocky</p><p class="where">Hyderabad</p></div></div><p class="m-card-body">Found my favorite ball after 3 days!</p><p class="m-card-foot">63 licks</p></div>
+        </div>
+      </div>
+  </section>
+
+  <!-- ============ DOWNLOAD CTA — emphasize Sniffr Web + Android ============ -->
+  <div class="download-cta reveal" id="download">
+    <p class="eyebrow"><span class="dot" style="background:#34A972"></span> Ready when you are</p>
+    <h2 class="download-heading">Ready to find<br><em>your pack?</em></h2>
+    <p>Jump into Sniffr from your browser, or take the pack with you on Android. 🐾</p>
+    <div class="download-ctas">
+      <a href="https://sniffrweb.com" target="_blank" rel="noopener" class="btn btn-primary">🌐 Open sniffrweb.com</a>
+      <a href="#contact" class="btn btn-dark">📱 Download for Android</a>
+    </div>
+  </div>
+
+  <!-- ============ CONTACT FOOTER ============ -->
+  <footer class="site-footer" id="contact">
+    <span class="material-symbols-outlined footer-paw footer-paw-1">pets</span>
+    <span class="material-symbols-outlined footer-paw footer-paw-2">pets</span>
+    <div class="footer-glow"></div>
+
+    <div class="footer-top">
+      <div class="footer-brand-block reveal">
+        <a href="#top" class="brand-mark">
+          <img src="assets/brand/logo.png" alt="Sniffr" />
+          <span>Sniffr</span>
+        </a>
+        <p class="footer-tagline">A social world built around your pet — their own profile, friendships, and a circle that truly gets them.</p>
+      </div>
+
+      <div class="footer-cols reveal">
+        <div class="footer-col">
+          <h4>Get Sniffr</h4>
+          <a href="https://sniffrweb.com" target="_blank" rel="noopener">Sniffr Web</a>
+          <a href="#download">Android App</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="https://sniffrweb.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>
+          <a href="https://sniffrweb.com/terms" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:official.sniffr@gmail.com">official.sniffr@gmail.com</a>
+          <a href="#" aria-disabled="true">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom reveal">
+      <span>© 2026 SNIFFRWEB.COM</span>
+      <span>Created for pets. Crafted by pet people🐾</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
