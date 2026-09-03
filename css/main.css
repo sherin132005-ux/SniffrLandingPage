@@ -191,12 +191,30 @@ button { font-family: inherit; cursor: pointer; }
 .header-ctas { display: flex; align-items: center; gap: 10px; }
 .nav-links { display: flex; gap: 34px; }
 
+/* Compact bubble holding both the Web + App shortcuts (visible at every breakpoint) */
+.web-app-bubble {
+  display: flex; align-items: center; gap: 2px;
+  background: var(--surface-container-lowest);
+  border: 1.5px solid var(--outline-variant);
+  border-radius: var(--radius-full);
+  padding: 5px; box-shadow: var(--shadow-card);
+}
+.bubble-link {
+  display: flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 50%; color: var(--on-surface);
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s var(--ease-bounce);
+  -webkit-tap-highlight-color: transparent;
+}
+.bubble-link:hover, .bubble-link:focus-visible { background: var(--primary-container); color: var(--on-primary-container); }
+.bubble-link:active { transform: scale(0.9); }
+.bubble-icon { width: 17px; height: 17px; }
+.bubble-divider { width: 1px; height: 18px; background: var(--outline-variant); margin: 0 1px; flex-shrink: 0; }
+
 .menu-toggle { display: none; background: none; border: none; padding: 8px; }
 .menu-toggle span { display: block; width: 22px; height: 2px; background: var(--on-surface); margin: 4px 0; border-radius: 2px; }
 
 @media (max-width: 860px) {
   .nav-links { display: none; }
-  .header-ctas .btn-ghost { display: none; }
   .menu-toggle { display: block; }
 }
 
@@ -440,6 +458,75 @@ button { font-family: inherit; cursor: pointer; }
 .m-card-head .where { font-size: 0.72rem; color: var(--on-surface-variant); }
 .m-card-body { font-size: 0.86rem; color: var(--on-surface-variant); line-height: 1.5; }
 .m-card-foot { font-size: 0.76rem; color: var(--primary); font-weight: 700; }
+
+/* ============================================================
+   PRICING
+   ============================================================ */
+.pricing { padding: 100px 0 70px; }
+.pricing .section-title em { font-style: normal; color: var(--wordmark-soft); }
+
+.pricing-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
+  align-items: stretch; max-width: 1080px; margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .pricing-grid { grid-template-columns: 1fr; max-width: 440px; }
+}
+
+.pricing-card {
+  position: relative; display: flex; flex-direction: column;
+  background: var(--surface-container-lowest); border-radius: var(--radius-lg);
+  padding: 36px 28px 30px; box-shadow: var(--shadow-card);
+  transition: transform 0.35s var(--ease-soft), box-shadow 0.35s var(--ease-soft);
+}
+.pricing-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-card-hover); }
+
+.pricing-plan { font-size: 1.1rem; font-weight: 800; color: var(--on-surface); margin: 0 0 14px; }
+.pricing-price { font-size: 2.1rem; font-weight: 800; color: var(--wordmark); margin: 0; line-height: 1; }
+.pricing-price span { font-size: 0.85rem; font-weight: 700; color: var(--on-surface-variant); margin-left: 4px; }
+
+.pricing-save {
+  display: inline-block; margin-top: 12px; padding: 4px 12px;
+  background: var(--tertiary-container); color: var(--on-tertiary-container);
+  font-size: 0.78rem; font-weight: 700; border-radius: var(--radius-full);
+}
+
+.pricing-desc { font-size: 0.9rem; line-height: 1.6; color: var(--on-surface-variant); margin: 16px 0 26px; flex-grow: 1; }
+.pricing-cta { width: 100%; }
+
+.pricing-card--featured {
+  color: #fff;
+  background: linear-gradient(135deg, var(--wordmark) 0%, var(--primary) 100%);
+  box-shadow: 0 30px 60px -22px rgba(142,46,67,0.5);
+  transform: translateY(-10px);
+}
+.pricing-card--featured:hover { transform: translateY(-14px); }
+@media (max-width: 900px) {
+  .pricing-card--featured, .pricing-card--featured:hover { transform: none; }
+}
+.pricing-card--featured .pricing-plan,
+.pricing-card--featured .pricing-price { color: #fff; }
+.pricing-card--featured .pricing-price span { color: rgba(255,255,255,0.78); }
+.pricing-card--featured .pricing-desc { color: rgba(255,255,255,0.85); }
+.pricing-card--featured .pricing-save { background: rgba(255,255,255,0.22); color: #fff; }
+.pricing-card--featured .btn-primary { background: #fff; color: var(--wordmark); box-shadow: none; }
+.pricing-card--featured .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 24px -10px rgba(0,0,0,0.25); }
+
+.pricing-badge {
+  position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+  background: #fff; color: var(--wordmark); font-size: 0.72rem; font-weight: 800;
+  letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap;
+  padding: 7px 18px; border-radius: var(--radius-full); box-shadow: var(--shadow-card);
+}
+
+.pricing-perks {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 34px;
+  margin: 50px auto 0; padding-top: 36px; max-width: 900px;
+  border-top: 1px solid var(--outline-variant);
+}
+.pricing-perk { display: flex; align-items: center; gap: 8px; font-size: 0.86rem; font-weight: 600; color: var(--on-surface-variant); }
+.pricing-perk p { margin: 0; }
+.pricing-perk .material-symbols-outlined { font-size: 20px; color: var(--primary); }
 
 /* ============================================================
    CONTACT / FOOTER — final push toward Sniffr Web + Android

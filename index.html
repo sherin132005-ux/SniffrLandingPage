@@ -46,12 +46,20 @@
     <nav class="nav-links">
       <a href="#benefits">Benefits</a>
       <a href="#testimonials">Community</a>
+      <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <div class="header-ctas">
-      <a href="https://www.sniffrweb.com/web" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Sniffr Web</a>
-      <a href="#download" class="btn btn-dark btn-sm">Get the App</a>
+      <div class="web-app-bubble">
+        <a href="https://www.sniffrweb.com/web" target="_blank" rel="noopener" class="bubble-link" aria-label="Open Sniffr Web" title="Sniffr Web">
+          <svg class="bubble-icon" aria-hidden="true"><use href="#icon-web-cursor"></use></svg>
+        </a>
+        <span class="bubble-divider" aria-hidden="true"></span>
+        <a href="#download" class="bubble-link" aria-label="Get the Sniffr Android app" title="Get the App">
+          <svg class="bubble-icon" aria-hidden="true"><use href="#icon-android"></use></svg>
+        </a>
+      </div>
     </div>
 
     <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -60,6 +68,7 @@
   <nav class="mobile-nav">
     <a href="#benefits">Benefits</a>
     <a href="#testimonials">Community</a>
+    <a href="#pricing">Pricing</a>
     <a href="#contact">Contact</a>
     <a href="https://www.sniffrweb.com/web" target="_blank" rel="noopener">Open Sniffr Web</a>
     <a href="#download">Get the App</a>
@@ -190,6 +199,52 @@
           <div class="m-card"><div class="m-card-head"><img class="avatar" src="assets/photos/avatar-rocky.jpg" alt="Rocky from Hyderabad on Sniffr" /><div><p class="who">Rocky</p><p class="where">Hyderabad</p></div></div><p class="m-card-body">Found my favorite ball after 3 days!</p><p class="m-card-foot">63 licks</p></div>
         </div>
       </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span> Sniffr Premium</p>
+        <h2 class="section-title">A Little More Sniffr.<br><em>A Lot More Fun.</em></h2>
+        <p class="section-sub">Unlock more matches, more circles, and a smoother Sniffr experience — pick the plan that fits your pack.</p>
+      </div>
+
+      <div class="pricing-grid reveal-stagger">
+        <div class="pricing-card">
+          <p class="pricing-plan">Sniffr Plus</p>
+          <p class="pricing-price">₹99<span>/ 1 month</span></p>
+          <p class="pricing-desc">A quick-start Premium pass — perfect for testing the waters.</p>
+          <a href="#download" class="btn btn-ghost pricing-cta">Get Started</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured">
+          <span class="pricing-badge">Most Preferred</span>
+          <p class="pricing-plan">Sniffr Gold</p>
+          <p class="pricing-price">₹199<span>/ 3 months</span></p>
+          <p class="pricing-save">You save ₹98</p>
+          <p class="pricing-desc">Our most-loved plan — more months, more savings, more fun.</p>
+          <a href="#download" class="btn btn-primary pricing-cta">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+          <p class="pricing-plan">Sniffr Platinum</p>
+          <p class="pricing-price">₹799<span>/ 12 months</span></p>
+          <p class="pricing-save">You save ₹389</p>
+          <p class="pricing-desc">Go all year — maximum savings for the most social pets.</p>
+          <a href="#download" class="btn btn-ghost pricing-cta">Get Started</a>
+        </div>
+      </div>
+
+      <div class="pricing-perks reveal-stagger">
+        <div class="pricing-perk"><span class="material-symbols-outlined">explore</span><p>More ways to discover &amp; connect</p></div>
+        <div class="pricing-perk"><span class="material-symbols-outlined">bolt</span><p>A smoother Premium experience</p></div>
+        <div class="pricing-perk"><span class="material-symbols-outlined">savings</span><p>More value with longer plans</p></div>
+        <div class="pricing-perk"><span class="material-symbols-outlined">lock</span><p>Safe &amp; secure payments</p></div>
+        <div class="pricing-perk"><span class="material-symbols-outlined">event_available</span><p>Cancel anytime</p></div>
+        <div class="pricing-perk"><span class="material-symbols-outlined">favorite</span><p>Made by pet parents, for pet parents</p></div>
+      </div>
+    </div>
   </section>
 
   <!-- ============ DOWNLOAD CTA — emphasize Sniffr Web + Android ============ -->
